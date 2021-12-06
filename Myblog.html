@@ -1,353 +1,96 @@
 <!DOCTYPE html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
-<style>
-$dark: #0000FF;
-$pink: #FFFFFF;
-$light: #FFFCE2;
-$tan: #FFE4B6;
-$text: #222222;
-$lighttext: #4F4F4F;
+<html>
+<title>My Personal Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b></b> Joob Rosas</a>
+    <!-- Float links to the right. Hide them on small screens -->  
+    </div>
+  </div>
+</div>
 
-/* IE9  - Also picked up by most modern browsers */
-::selection {
-    background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-/* Safari & Chrome - Webkit Rendering */
-::-webkit-selection {
-    background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-/* Mozilla based - Gecko Rendering */    
-::-moz-selection {
-     background:$pink;
-    color:#FFF;
-    text-shadow:none;
-}
-body{background-color: $dark;
-margin:7px;
-border:2px solid #7393B3;
-font-family: 'Open Sans', sans-serif;
-float:left;
-width:100%;
-  height:100%;
-}
-
-nav{
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin:0px;
-  padding:0px;
-  width:100%;
-  text-align:center;
-  background-color:#0000FF;
-  border-bottom:2px solid #7393B3;
-  ul{background-color:#0000FF;
-    padding:0px;
-    display:inline-block;
-    margin:0px;
-    li{
-      display:inline-block;
-      
-      
-      a{text-decoration:none;color:$dark;font-weight:bold; display:block;padding: 15px 40px; 
-        &:hover{background-color:#7393B3	;color:$dark;}
-      }
-      
-    }
-  }
-}
-.hero{
-text-align:center;
-margin:50px 0px;
-  h2{
-  color:##808080;
-  text-transform:uppercase;
-  font-size:21px;
-  line-height: 28px;
-  }
-    p{
-      color: $light;
-      span.highlight{color:$pink;}
-      a{color:$pink;} 
-    }  
-}
-.content{
-  float:left;display:block;clear:both;
-  width:100%;
-  padding:45px 0px;
-  background-color:#808080;
-  .leftcontent{
-    float:left;
-    width:50%;
-    display:inline-block;
-    .innerblock{float:right;}
-    .bloghighlight{
-      max-width:550px;
-      margin:0px auto;
-      
-      article{margin-top:25px;}
-        h4{
-          text-align:center;
-          font-size:19px;
-          margin:0;
-        }
-        .article-title{
-          h3{color: $dark;font-size:14px;line-height:28px;margin:0px;}
-        }
-      .article-details{
-        h3.date{
-          font-size:12px;
-          color: $lighttext;
-          font-height:14px;
-          margin:0px;
-        }
-      }
-      .article-summary{
-        font-size:14px;
-        line-height:1.5em;
-        a.readmore{
-          text-decoration:none;
-          font-family: 'Open Sans Condensed', sans-serif;
-          color: $pink;
-          font-weight:700;
-          float:right;
-          display:block;
-          padding:3px 10px;
-          margin-bottom:25px;
-          &:hover{color:#0096FF;background-color:$pink;}
-        }
-      }
-    }
-
-  }
-  .rightcontent{
-    float:left;
-    width:50%;
-    display:inline-block;
-    .innerblock{float:left;}
-    
-    ul{
-      margin-top:25px;
-      li{
-        list-style-type:none;
-        color:$dark;
-        padding-top:15px;
-        a{
-        font-weight:bold;
-        font-size:14px;
-          color:$pink;
-          word-wrap:break-word;
-        }
-      }
-    }
-    .highlight{
-      max-width:550px;
-      margin:0 auto;
-      
-      img{
-        width:225px;
-        height:225px;
-      }
-      h2{
-        text-align:center;
-        font-size:19px;
-        margin:0;
-      }
-      ul.portfolio-images{
-        li{
-          display:inline-block;
-          padding:0;
-        }
-      }
-    }
-
-  }
-  .innerblock{
-  padding:0px 30px;
-  }
-}
-
-.link{
-  display:block;
-  clear:both;
-  margin:0 auto;
-  width:150px;
-  text-align:center;
-  
-  a{
-      display:block;
-      background-color:$pink;
-      color:#fff;
-      text-decoration:none;
-      padding:10px 25px;
-      border-radius:7px;
-          
-      &:hover{background-color:$lighttext;}
-    }
-}
-
-.expertise{
-  float:left;
-  width:100%;
-
-  .col13{
-    display:inline-block;
-    width:25%;
-    margin:4%;
-    color:#fff;
-    h2{text-align:center;}
-    p{}
-  }
-  h3{
-    text-transform:uppercase;
-    font-size:2em;
-    letter-spacer:2px;
-    text-align:center;
-    padding:35px 0px 0px 0px;
-    color:#fff;
-  }
-  .exwrapper{
-    padding-bottom:75px;
-  }
-  
-  .expert1{
-      display:block;
-  }
-
-      
-      
-  
-}
-.arrow_box_pink {
-	position: relative;
-	background: #0096FF	;
-}
-.arrow_box_pink:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(230, 91, 83, 0);
-	border-top-color: #E65B53;
-	border-width: 30px;
-	margin-left: -30px;
-}
-
-
-footer{
-  float:left;
-  clear:both;
-  padding:50px 0px;
-  width:100%;
-  background-color:$tan;
-  ul.cta{
-    max-width:550px;
-    margin:0 auto;
-    li{
-      list-style-type:none;
-      color:$dark;
-      a{
-        color:$pink;
-      }
-    }
-  }
-}
-</style>
-</head>
-
-<header>
-<nav role='navigation'>
-  <ul>
-  </ul>
-</nav>  
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1700px;" id="home">
+  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b></b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+  </div>
 </header>
 
-<div class="hero">
-  <h2>Hello!<br />Welcome to my personal blog :)<br /></h2>
-  <p>Currently I live <span class="highlight">in Dallas , Texas in the United States of America </span></p>
-</div>
-<div class="content">
-  <div class="leftcontent">
-    <div class="innerblock">
-      <div class="bloghighlight">
-        
-        <article>
-          <div class="article-title">
-            <h3>What I do and who I am</h3>
-          </div>
-          <div class="article-details">
-          <div class="article-summary">
-            <p> Hello my name is Joob Rosas I am a senior at Adamson Collgiate Academy. I am currently 17 years old. I love to play sports especially soccer.</p>
-          </div>
-        </article>
-                <article>
-          <div class="article-title">
-            <h3>Places I have been to. 
-          </div>
-          <div class="article-details">
-          </div>
-          <div class="article-summary">
-            <p>I have gone to Guadalajara city in Mexico and to Madrid , Spain. Inside the U.S. I have only been to Austin and Oklahoma.</p>
-          </div>
-        </article>  
-                <article>
-          <div class="article-title">
-            <h3>What i would like to do when older</h3>
-          </div>
-          <div class="article-details">
-          </div>
-          <div class="article-summary">
-            <p>When older I am interested in becoming a dental hygenist. Planning to still attend college after graduation. It is a more of one to one interaction which to me seems intersting just like dentists dental hgienists explain to the patients about flossing and how important that is. The schedule is flexible they only work a few days a week and with an amazing pay. The demand for dental hygenists is growing everywhere. It would be fun to be one including the good amount of pay :)</p>
-          </div>
-        </article>
-        </div>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="project">
+  </div>
+
+  
       </div>
     </div>
-  </div>
-  <div class="rightcontent">
-    <div class="innerblock">
-        <div class="highlight">
-          
-          <ul class="portfolio-images">
-            
-          </ul>
-         <div class="linkwrapper">
-          </div>
-         </div>
-
-        </div>
+   
+     </div>
     </div>
   </div>
-</div>
 
-<div class="expertise">
-
-    <h3 class="sectionheader">Big plans in the future..?</h3>
-
-  <div class="expert1">
-    <div class="exwrapper">
-      <div class="col13">
-    <p>As of now working has been the only thing planned I have for sure. I would like to buy a new dog to make friends with my boxer dog. I would like to aquire a rottweiler. Having kids?.. not any time soon as of now it is not in my book of plans. Part time studying in college at the same time I work.  </p></div>
-      <div class="col13">
+  
+      </div>
     </div>
-      <div class="col13">
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="Description">
+    <h3 class="w3-border-bottom w3-border-blue w3-padding-20">Some Information</h3>
+    <p>Greetings my name is Joob Rosas and this is my personal blog where I share some personal information about me and my plans for the upcoming future.</p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m3 w3-margin-bottom">
     </div>
+    <div class="w3-col l3 m3 w3-margin-bottom">
+      <img src="asap&cole.jpg" alt="Chato" style="width:100%">
+      <h3>music</h3>
+      <p class="w3-opacity">section two</p>
+      <p>My Dog Chato is my bestfriend I have had him since I was 3. He is very lovable despite his temper. Very loyal and charismatic</p> 
+    </div>
+    <div class="w3-col l3 m3 w3-margin-bottom">
+      <img src="GOT.jfif" alt="Soccer" style="width:100%">
+      <h3>shows</h3>
+      <p>Soccer is my favorite sport I have been playing this sport since I was 5. My dad and my uncle have involved me in this sport. And I have loved it since. My brother also plays soccer.</p>   
+    </div>
+ 
+    <div class="w3-col l3 m3 w3-margin-bottom">
+      <img src="11s.jfif" alt="Dental Hygienist" style="width:100%">
+      <h3>Dream Job</h3>
+      <p>When older I am interested in becoming a dental hygenist. Planning to still attend college after graduation. It is a more of one to one interaction which to me seems intersting just like dentists dental hgienists explain to the patients about flossing and how important that is. The schedule is flexible they only work a few days a week and with an amazing pay. The demand for dental hygenists is growing everywhere. It would be fun to be one including the good amount of pay :)</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="After High School">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Extra Information...</h3>
+    <p>Some places I have been to, I have gone to Guadalajara city in Mexico and to Madrid , Spain. Inside the U.S. I have only been to Austin and Oklahoma.
+</p>
+   
+       
       
   </div>
-</div> 
+  
+<!-- Image of one of the places I have been to -->
+<div class="w3-container">
+  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
 
 
-<footer>
-   <ul class="cta">
-    
-   </ul>
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-16">
+ 
 </footer>
-  </html>  
+</body>
+</html>
